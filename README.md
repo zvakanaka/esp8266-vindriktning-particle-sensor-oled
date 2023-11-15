@@ -1,4 +1,4 @@
-> Modifications made to the original are only to add an OLED screen 
+> Modifications in this fork are only to add an OLED screen 
 
 <p align="center"><h2>MQTT connectivity for the Ikea VINDRIKTNING</h2></p>
 
