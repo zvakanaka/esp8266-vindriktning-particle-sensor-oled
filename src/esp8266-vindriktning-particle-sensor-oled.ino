@@ -66,7 +66,7 @@ void setup()
   u8g2.begin();
 
   u8g2.setFont(u8g2_font_unifont_t_symbols);
-  u8g2.drawGlyph(5, 20, 0x23f3);
+  u8g2.drawGlyph((64 - 12) / 2, 40, 0x23f3);
 
   u8g2.setFont(u8g2_font_simple1_te);
   // u8g2.clearBuffer();
@@ -156,7 +156,7 @@ void loop()
       snprintf(avgPM25, sizeof(avgPM25), "%d", state.avgPM25);
       u8g2_uint_t w = u8g2.getStrWidth(avgPM25);
       u8g2.clearBuffer();
-      u8g2.drawStr((128 - w) / 2, 50, avgPM25);
+      u8g2.drawStr((128 - w) / 2, (64 - 50) / 2 + 50, avgPM25);
       u8g2.sendBuffer();
 
       printf("Publish state\n");
